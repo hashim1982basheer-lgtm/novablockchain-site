@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaBlockchain</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    .hero {
+      padding: 80px 20px;
+      background:
+        radial-gradient(circle at top, rgba(99,102,241,0.22), transparent 35%),
+        radial-gradient(circle at right, rgba(14,165,233,0.18), transparent 28%),
+        #000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      color: #d4d4d8;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin: 24px 0;
+      max-width: 850px;
+    }
+    h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+    p { color: #d4d4d8; }
+    .buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 14px;
+      padding: 14px 22px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .primary { background: white; color: black; }
+    .secondary { border: 1px solid rgba(255,255,255,0.15); color: white; }
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+    .stats { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-top: 40px; }
+    .features { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .cards { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card {
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      padding: 22px;
+    }
+    section { padding: 70px 20px; }
+    .muted {
+      color: #71717a;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    .footer {
+      padding: 40px 20px 70px;
+      color: #a1a1aa;
+      text-align: center;
+    }
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.8);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+    }
+    .brand {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .navlinks a {
+      color: #d4d4d8;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 38px; }
+      h2 { font-size: 28px; }
+      .navlinks { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="brand">NovaBlockchain</div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+      <div class="badge">NovaBlockchain • Native Coin Infrastructure</div>
+      <h1>Build your own chain. Launch your own coin.</h1>
+      <p>
+        NovaBlockchain is a clean blockchain MVP built around the NOVA coin,
+        with a premium landing page, docs-ready structure, and a practical launch path.
+      </p>
+      <div class="buttons">
+        <a class="primary" href="#roadmap">View Roadmap</a>
+        <a class="secondary" href="#tokenomics">Tokenomics</a>
+      </div>
+
+      <div class="grid stats">
+        <div class="card">
+          <strong style="font-size:28px;">NOVA</strong><br>
+          <span style="color:#a1a1aa;">Native coin</span>
+        </div>
+        <div class="card">
+          <strong style="font-size:28px;">1B</strong><br>
+          <span style="color:#a1a1aa;">Genesis supply</span>
+        </div>
+        <div class="card">
+          <strong style="font-size:28px;">PoA</strong><br>
+          <span style="color:#a1a1aa;">MVP consensus</span>
+        </div>
+        <div class="card">
+          <strong style="font-size:28px;">.in</strong><br>
+          <span style="color:#a1a1aa;">Domain ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="muted">Why NovaBlockchain</div>
+      <h2>A clean blockchain launch foundation.</h2>
+      <div class="grid features">
+        <div class="card">
+          <h3>Native NOVA Coin</h3>
+          <p>Built around a native coin concept, not just a token on another chain.</p>
+        </div>
+        <div class="card">
+          <h3>Explorer Ready</h3>
+          <p>Prepared for blocks, balances, and transactions through a simple explorer.</p>
+        </div>
+        <div class="card">
+          <h3>Launch Structured</h3>
+          <p>Website, docs, and chain setup aligned for a practical rollout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" style="background: rgba(255,255,255,0.02); border-top:1px solid rgba(255,255,255,0.08); border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div class="container">
+      <div class="muted">Tokenomics</div>
+      <h2>Built around the NOVA coin.</h2>
+      <div class="grid cards">
+        <div class="card"><strong>Coin Name</strong><p>Nova Coin</p></div>
+        <div class="card"><strong>Ticker</strong><p>NOVA</p></div>
+        <div class="card"><strong>Supply</strong><p>1,000,000,000</p></div>
+        <div class="card"><strong>Launch Mode</strong><p>Private Testnet</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <div class="muted">Roadmap</div>
+      <h2>From MVP to public chain.</h2>
+      <div class="grid">
+        <div class="card">01. Private testnet launch</div>
+        <div class="card">02. Docs and explorer rollout</div>
+        <div class="card">03. Public website launch</div>
+        <div class="card">04. Public testnet expansion</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    NovaBlockchain © 2026 • novablockchain.in
+  </div>
+</body>
+</html>
